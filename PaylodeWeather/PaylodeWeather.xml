@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PaylodeWeather</name>
+    </assembly>
+    <members>
+        <member name="T:PaylodeWeather.Controllers.AccountsController">
+            <summary>
+            Accounts controller
+            </summary>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.AccountsController.#ctor(Microsoft.AspNetCore.Identity.UserManager{Microsoft.AspNetCore.Identity.IdentityUser},Microsoft.AspNetCore.Identity.SignInManager{Microsoft.AspNetCore.Identity.IdentityUser},System.IServiceProvider,AutoMapper.IMapper,PaylodeWeather.Infrastructure.PaylodeWeatherDbContext)">
+            <summary>
+            Accounts constructor
+            </summary>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.AccountsController.CreateUserAsync(PaylodeWeather.Core.DTOs.UserCredentials)">
+            <summary>
+            Create a user
+            </summary>
+            <param name="creds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.AccountsController.Login(PaylodeWeather.Core.DTOs.UserCredentials)">
+            <summary>
+            Login
+            </summary>
+            <param name="creds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.AccountsController.ListUsersAsync">
+            <summary>
+            List users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.AccountsController.AssignAdminRoleAsync(System.String)">
+            <summary>
+            Assign admin role to a user by userId
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.AccountsController.RemoveAdminRoleAsync(System.String)">
+            <summary>
+            Remove admin role from a user
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PaylodeWeather.Controllers.WeatherForecastController">
+            <summary>
+            Weather Forecast Controller
+            </summary>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{PaylodeWeather.Controllers.WeatherForecastController})">
+            <summary>
+            Weather Forecast Constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:PaylodeWeather.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get Weather Forecast
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
